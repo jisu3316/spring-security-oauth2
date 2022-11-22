@@ -58,4 +58,25 @@ OAuth 2.0 인가 프레임워크는 애플리케이션이 사용자 대신하여
 • 권한 부여 코드 흐름에서 사용되며 이 코드는 클라이언트가액세스 토큰과 교환할 임시 코드임.  
 • 사용자가 클라이언트가 요청하는 정보를 확인하고 인가 서버로부터 리다이렉트 되어 받아온다.  
 
+# OAuth 2.0 Grant Types. 
+• 권한 부여 유형.  
 
+• 권한부여란 클라이언트가 사용자를 대신해서 사용자의 승인하에 인가서버로부터 권한을 부여받는 것을 의미한다. 
+• OAuth 2.0 메커니즘은 아래와 같은 권한 부여 유형들을 지원하고 있으며 일부는 Depreacted 되었다. 
+1. Authorization Code Grant Type
+   권한 코드 부여 타입, 서버 사이드 어플리케이션(웹 어플리케이션), 보안에 가장 안전한 유형
+
+2. Implicit Grant Type (Deprecated)
+   암시적 부여 타입, 공개 클라이언트 어플리케이션 (SPA 기반 자바스크립트 앱, 모바일 앱), 보안에 취약
+
+3. Resource Owner Password Credentials Grant Type (Deprecated)
+   리소스 사용자 비밀번호 자격증명 부여 타입, 서버 어플리케이션, 보안에 취약
+
+4. Client Credentials Grant Type
+   클라이언트 자격 증명 권한 부여 타입 , UI or 화면이 없는 서버 어플리케이션
+
+5. Refresh Token Grant Type
+   새로고침 토큰 부여 타입, Authorization Code, Resource Owner Password Type 에서 지원
+
+6. PKCE-enhanced Authorization Code Grant Type
+   PKCE 권한 코드 부여 타입 , 서버 사이드 어플리케이션, 공개 클라이언트 어플리케이션
